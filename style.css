@@ -8,11 +8,18 @@ body {
     background-color: darkslategrey;
 }
 
+h1 {
+    color: #f4f4f4;
+    text-align: center;
+    padding: 2rem 0;
+}
+
 .demo-btns {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-wrap: wrap;
+    height: 80vh;
 }
 
 .demo-btns button {
@@ -21,6 +28,10 @@ body {
     padding: 1rem 1rem;
     margin: 0 2rem;
     font-size: 18px;
+}
+
+.demo-btns button:hover {
+    opacity: 0.9;
 }
 
 #successBtn {

@@ -1,9 +1,9 @@
-import { test, customAlert } from "./alertModule.js";
+import { customAlert } from "./alertModule.js";
 const succesBtn = document.getElementById('successBtn');
 const warningBtn = document.getElementById('warningBtn');
 const errorBtn = document.getElementById('errorBtn');
 
-const btnArr = [succesBtn, warningBtn, errorBtn];
+// Object that contains the base customizable style for the buttons
 const customSetting = {width: '30%', height: '10%', color: '#000', bgColor: '#90ee90', border: 'none', borderRad: '20px'};
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     errorBtn.addEventListener('click', showErrorAlert);
 });
 
+// Functions that call the custom alert function, each with their own style
 function showSuccessAlert(ev) {
     customSetting.color = '#000000';
     customSetting.bgColor = '#90ee90';
